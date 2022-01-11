@@ -37,7 +37,7 @@ ul{
 #user-card{
     background: var(--blue);
     border-radius: 1em;
-    width: 16em;
+    max-width: 16em;
     height: 22em;
     position: relative;
     z-index: 999;
@@ -48,13 +48,13 @@ ul{
     padding-left:1.7em;
 }
 
-.card-body > h1{
+.col-12 > h1{
     font-size: 2.5em;
     font-weight: 300;
     color: rgba(255, 255, 255, 0.842);
 }
 
-.card-body > p{
+.col-12 > p{
     margin:0;   
     margin-top: 2.5em;
     font-size: .9em;
@@ -63,7 +63,7 @@ ul{
 }
 
 .user-footer{
-    width: 16em;
+    max-width: 16em;
     height: 11em;
     padding-top: 2.5em;
     padding-left: 2em;
@@ -73,12 +73,12 @@ ul{
     background: var(--dark-blue);
 }
 
-.user-footer > .col-12:hover{
+.user-footer > .row > .col-4:hover{
     color: white;
     cursor: pointer;
 }
 
-.user-footer > .col-12{
+.user-footer > .row > .col-4{
     margin-bottom: 1em;
     font-weight: 400;
     font-weight: 1.5em!important;
@@ -91,8 +91,163 @@ ul{
     border: 2px solid white;
 }
 
+.cards > .card{
+    background: var(--dark-blue);
+    max-width: 16em;
+    height: 11em;
+    border-radius: 1em;
+}
+.cards{
+    justify-content: space-evenly;
+    height: 100%;
+    align-content: space-around;
+}
+
+.top-card{
+    background: var(--light-red-work);
+    border-radius: 1em 1em 0 0;
+    max-width: 16em;
+    height: 3.5em;
+    position: relative;
+    z-index: 1;
+}
+
+.bottom-card{
+    background: var(--dark-blue);
+    border-radius: 1em;
+    padding: 1em;
+    max-width: 16em;
+    height: 12.5em;
+    z-index: 3;
+    position: relative;
+    margin-top:-1em;
+}
+
+.card-logo{
+    float: right;
+    padding-right: 1em;
+    z-index: 2;
+}
+
+.btn{
+    color: var(--pale-blue);
+    position: absolute;
+    right: 1em;
+    font-weight: 600;
+    letter-spacing: .125em;
+    padding-top:0;
+    top: 1em;
+    vertical-align: middle;
+    margin:0;
+}
+
+
+.col-6 > h1{
+    padding: 0 .25em;
+    margin-top: .75em;
+    font-size: 3.5em;
+    font-weight: 300;
+}
+
+.col-6 > p {
+    padding: 0 .5em;
+    font-weight: 300;
+    color: var(--pale-blue)
+}
+
+.card-logo{
+    height: 5em;
+}
+
+.work{
+    background: var(--light-red-work);
+}
+
+.play{
+    background: var(--soft-blue-play);
+}
+
+.study{
+    background: var(--light-red-study);
+}
+
+.exercise{
+    background: var(--lime-green-exercise);
+}
+
+.social{
+    background: var(--violet-social);
+}
+
+.self-care{
+    background: var(--soft-orange-self-care);
+}
+
+.work-card{
+    margin-bottom: 1.5em;
+}
+
 @media screen and (max-width: 768px){
     .container > .row{
         margin: 0em 1em;
+    }
+    
+    #user-card{
+        max-width: 30em;
+        height: 7em;
+    }
+
+    .user-footer{
+        max-width: 30em;
+        height: 4.5em;
+        padding:0;
+        padding-top: 2em;
+        text-align: center;
+    }
+
+
+    #user-card > .card-body{
+        padding-top:1.5em;
+        padding-left:1.5em;
+    }
+    
+    .avatar{
+        width: 4em;
+        height: 4em;
+        border-radius: 50%;
+        border: 2px solid white;
+    }
+
+    .col-12 > h1{
+        font-size: 1.5em;
+        font-weight: 300;
+        color: rgba(255, 255, 255, 0.842);
+    }
+    
+    .col-12 > p{
+        margin:0;   
+        font-size: .9em;
+        font-weight: 400;
+        color: rgba(255, 255, 255, 0.589);
+    }
+
+    .avatar-container{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .top-card{
+        max-width: 30em;
+    }
+    
+    .bottom-card{
+        max-width: 30em;
+    }
+    
+    .cards > div {
+        margin-bottom: 2em;
+    } 
+    .cards{
+        margin-top:2em;
     }
 }
