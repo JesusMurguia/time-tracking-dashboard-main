@@ -31,7 +31,7 @@ window.onload = function() {
     dailyBtn.addEventListener("click", function() {
         toggleSelected(dailyBtn);
 
-        fetch("../data.json")
+        fetch("./data.json")
         .then(response => response.json())
         .then(data => {
             hours.forEach((hour, index) => {
@@ -48,7 +48,7 @@ window.onload = function() {
     weeklyBtn.addEventListener("click", function() {
         toggleSelected(weeklyBtn);
 
-        fetch("../data.json")
+        fetch("./data.json")
         .then(response => response.json())
         .then(data => {
             hours.forEach((hour, index) => {
@@ -64,7 +64,7 @@ window.onload = function() {
     monthlyBtn.addEventListener("click", function() {
         toggleSelected(monthlyBtn); 
 
-        fetch("../data.json")
+        fetch("./data.json")
         .then(response => response.json())
         .then(data => {
             hours.forEach((hour, index) => {
