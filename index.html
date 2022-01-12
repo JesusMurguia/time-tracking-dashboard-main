@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <link rel="stylesheet" href="./css/style.css">
+  <script type="text/javascript" src="./data.json"></script>
   <script src="./js/index.js"></script>
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
@@ -30,9 +31,9 @@
         </div>
         <div class="user-footer">
           <div class="row">
-            <div class="col-4 col-lg-12">Daily</div>
-            <div class="col-4 col-lg-12 selected">Weekly</div>
-            <div class="col-4 col-lg-12">Monthly</div>
+            <div id="daily-btn" class="col-4 col-lg-12">Daily</div>
+            <div id="weekly-btn" class="col-4 col-lg-12 selected">Weekly</div>
+            <div id="monthly-btn" class="col-4 col-lg-12">Monthly</div>
           </div>
         </div>
       </div>
@@ -48,8 +49,8 @@
                 <div class="col"><button class="btn">...</button></div>
               </div>
               <div class="row">
-                <div class="col-4 col-lg-12"><h1>32hrs</h1></div>
-                <div class="col-8 col-lg-12"><p>Last Week - 36hrs</p></div>
+                <div class="col-5 col-lg-12"><h1 id="work-hrs">32hrs</h1></div>
+                <div class="col-7 col-lg-12"><p id="work-previous">Last Week - 36hrs</p></div>
               </div>
             </div>
           </div>
@@ -63,8 +64,8 @@
                 <div class="col2"><button class="btn">...</button></div>
               </div>
               <div class="row">
-                <div class="col-4 col-lg-12"><h1>10hrs</h1></div>
-                <div class="col-8 col-lg-12"><p>Last Week - 8hrs</p></div>
+                <div class="col-5 col-lg-12"><h1 id="play-hrs">10hrs</h1></div>
+                <div class="col-7 col-lg-12"><p id="play-previous">Last Week - 8hrs</p></div>
               </div>
             </div>
           </div>
@@ -78,14 +79,14 @@
                 <div class="col-2"><button class="btn">...</button></div>
               </div>
               <div class="row">
-                <div class="col-4 col-lg-12"><h1>4hrs</h1></div>
-                <div class="col-8 col-lg-12"><p>Last Week - 7hrs</p></div>
+                <div class="col-5 col-lg-12"><h1 id="study-hrs">4hrs</h1></div>
+                <div class="col-7 col-lg-12"><p id="study-previous">Last Week - 7hrs</p></div>
               </div>
             </div>
           </div>
           <div class="col-lg-4 exercise-card">
             <div class="top-card exercise">
-              <img src="./images/icon-exercise.svg" alt="play" class="card-logo">
+              <img src="./images/icon-exercise.svg" alt="exercise" class="card-logo">
             </div>
             <div class="bottom-card">
               <div class="row">
@@ -93,8 +94,8 @@
                 <div class="col-2"><button class="btn">...</button></div>
               </div>
               <div class="row">
-                <div class="col-4 col-lg-12"><h1>4hrs</h1></div>
-                <div class="col-8 col-lg-12"><p>Last Week - 5hrs</p></div>
+                <div class="col-5 col-lg-12"><h1 id="exercise-hrs">4hrs</h1></div>
+                <div class="col-7 col-lg-12"><p id="exercise-previous">Last Week - 5hrs</p></div>
               </div>
             </div>
           </div>
@@ -108,8 +109,8 @@
                 <div class="col-2"><button class="btn">...</button></div>
               </div>
               <div class="row">
-                <div class="col-4 col-lg-12"><h1>5hrs</h1></div>
-                <div class="col-8 col-lg-12"><p>Last Week - 10hrs</p></div>
+                <div class="col-5 col-lg-12"><h1 id="social-hrs">5hrs</h1></div>
+                <div class="col-7 col-lg-12"><p id="social-previous">Last Week - 10hrs</p></div>
               </div>
             </div>
           </div>
@@ -123,8 +124,8 @@
                 <div class="col-2"><button class="btn">...</button></div>
               </div>
               <div class="row">
-                <div class="col-4 col-lg-12"><h1>2hrs</h1></div>
-                <div class="col-8 col-lg-12"><p>Last Week - 2hrs</p></div>
+                <div class="col-5 col-lg-12"><h1 id="self-care-hrs">2hrs</h1></div>
+                <div class="col-7 col-lg-12"><p id="self-care-previous">Last Week - 2hrs</p></div>
               </div>
             </div>
           </div>
